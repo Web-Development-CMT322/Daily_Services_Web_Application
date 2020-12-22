@@ -138,10 +138,11 @@ h5 {
 }
 
 .card:before {
-  content: '';
-  display: block;
-  padding-bottom: 70%;
+
+margin-top: 100%;
+  padding-bottom: 150%;
   width: 100%;
+
 }
 
 
@@ -366,4 +367,26 @@ h6{
 .testimonial{
 
 background-color: #ee4959;
+}
+
+#main_3{
+  margin-top: 20%;
+}
+
+.main_4_title
+{
+  color: white;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 60px;
+  margin-top: 5%;
+
+}
+.main_4_caption
+{
+  color: white;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  margin-bottom: 2%;
 }
