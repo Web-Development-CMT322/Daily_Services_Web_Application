@@ -12,6 +12,10 @@ app.get("/", function(req, res){
   res.sendFile(__dirname + "/index.html");
 });
 
+// const request = https.request(url, optios, function(response){
+//
+// })
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`)
 });

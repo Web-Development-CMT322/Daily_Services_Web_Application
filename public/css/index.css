@@ -26,6 +26,7 @@
 .btn {
   border-radius: 10px;
 }
+
 .button-2 {
   padding: 8px 40px;
   font-family: sans-serif;
@@ -33,6 +34,7 @@
   font-weight: bold;
   margin: 4% 10% 4% 10%;
 }
+
 h1 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 60px;
@@ -60,9 +62,6 @@ h5 {
   margin-top: 4%;
   margin-left: 9%;
 }
-
-
-
 
 .btn-sign-in {
   font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -137,14 +136,10 @@ h5 {
 }
 
 .card:before {
-
-margin-top: 100%;
+  margin-top: 100%;
   padding-bottom: 150%;
   width: 100%;
-
 }
-
-
 
 .card__background {
   background-size: cover;
@@ -213,10 +208,10 @@ h4::after {
 }
 
 .card-title {
-  color:black;
+  color: black;
   font-size: 140%;
   font-style: normal;
-  align:center;
+  align: center;
 }
 
 .card-img-top {
@@ -224,13 +219,11 @@ h4::after {
   height: auto;
   width: 100%;
   min-height: 250px;
-
   float: left;
   margin: 3px;
   padding: 3px;
   margin-top: 1px;
 }
-
 
 /* Make the image fully responsive */
 .carousel-inner img {
@@ -240,7 +233,6 @@ h4::after {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15%;
-
 }
 
 /* Full-width input fields */
@@ -254,20 +246,20 @@ input[type=text], input[type=password], input[type=email] {
   font-size: 16px;
 }
 
-.form-check-label{
+.form-check-label {
   margin-top: 20px;
   margin-left: 43px;
   text-align: center;
 }
 
-h3{
+h3 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 35px;
   color: #c83f90;
   padding-top: 40px;
 }
 
-h6{
+h6 {
   color: #41537a;
   font-size: 14px;
   padding-top: 10px;
@@ -317,7 +309,7 @@ h6{
   font-weight: bold;
 }
 
-.sign_in{
+.sign_in {
   font-family: 'Ubuntu', sans-serif;
   font-size: 10px;
   background-color: #d33f8d;
@@ -334,7 +326,7 @@ h6{
   transition-duration: 0.4s;
 }
 
-.sign_in:hover{
+.sign_in:hover {
   background-color: #5b48ad;
   color: white;
 }
@@ -359,33 +351,162 @@ h6{
   }
 }
 
-.s4-title
-{
+.s4-title {
   font-size: 130%;
 }
-.testimonial{
 
-background-color: #ee4959;
+.testimonial {
+  background-color: #ee4959;
 }
 
-#main_3{
+#main_3 {
   margin-top: 18%;
 }
 
-.main_4_title
-{
+.main_4_title {
   color: white;
   align-items: center;
   font-family: 'Ubuntu', sans-serif;
   font-size: 60px;
   margin-top: 5%;
-
 }
-.main_4_caption
-{
+
+.main_4_caption {
   color: white;
   align-items: center;
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
   margin-bottom: 2%;
+}
+
+/* Footer Style */
+
+.col_white_amrc {
+  color: #FFF;
+}
+
+footer {
+  width: 100%;
+  background-color: #263238;
+  min-height: 250px;
+  padding: 10px 0px 25px 0px;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.pt2 {
+  padding-top: 40px;
+  margin-bottom: 20px;
+  margin-left: -30px;
+}
+
+footer p {
+  font-size: 13px;
+  color: #CCC;
+  padding-bottom: 0px;
+  margin-bottom: 8px;
+}
+
+.mb10 {
+  padding-bottom: 15px;
+}
+
+.mb13 {
+  font-color: white;
+}
+
+.footer_ul_amrc {
+  margin: 0px;
+  list-style-type: none;
+  color: white;
+  font-size: 14px;
+  padding: 0px 0px 10px 0px;
+}
+
+.footer_ul_amrc li {
+  padding: 0px 0px 5px 0px;
+}
+
+.footer_ul_amrc li a {
+  color: #CCC;
+}
+
+.footer_ul_amrc li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fleft {
+  float: left;
+}
+
+.padding-right {
+  padding-right: 10px;
+}
+
+.footer_ul2_amrc {
+  margin: 0px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.footer_ul2_amrc li p {
+  display: table;
+}
+
+.footer_ul2_amrc li a:hover {
+  text-decoration: none;
+}
+
+.footer_ul2_amrc li i {
+  margin-top: 5px;
+}
+
+.bottom_border {
+  border-bottom: 1px solid #323f45;
+  padding-bottom: 20px;
+}
+
+.foote_bottom_ul_amrc {
+  list-style-type: none;
+  padding: 0px;
+  display: table;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.foote_bottom_ul_amrc li {
+  display: inline;
+}
+
+.foote_bottom_ul_amrc li a {
+  color: #999;
+  margin: 0 12px;
+}
+
+.social_footer_ul {
+  display: table;
+  margin: 15px auto 0 auto;
+  list-style-type: none;
+}
+
+.social_footer_ul li {
+  padding-left: 20px;
+  padding-top: 10px;
+  float: left;
+}
+
+.social_footer_ul li a {
+  color: #CCC;
+  border: 1px solid #CCC;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.social_footer_ul li i {
+  width: 20px;
+  height: 20px;
+  text-align: center;
 }
