@@ -1,0 +1,30 @@
+{
+  "name": "daily_services_web_application",
+  "version": "1.0.0",
+  "description": "Daily Service Web Application",
+  "main": "main_control.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Web-Development-CMT322/Daily_Services_Web_Application.git"
+  },
+  "keywords": [],
+  "author": "Fakhruddin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Web-Development-CMT322/Daily_Services_Web_Application/issues"
+  },
+  "homepage": "https://github.com/Web-Development-CMT322/Daily_Services_Web_Application#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mkdirp": "^1.0.4",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0"
+  }
+}
