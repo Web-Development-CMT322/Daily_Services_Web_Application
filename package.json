@@ -1,30 +1,37 @@
 {
   "name": "daily_services_web_application",
   "version": "1.0.0",
-  "description": "Daily Service Web Application",
-  "main": "main_control.js",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "eslint": "^7.16.0",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "mkdirp": "^1.0.4",
+    "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Web-Development-CMT322/Daily_Services_Web_Application.git"
   },
-  "keywords": [],
-  "author": "Fakhruddin",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Web-Development-CMT322/Daily_Services_Web_Application/issues"
   },
-  "homepage": "https://github.com/Web-Development-CMT322/Daily_Services_Web_Application#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "mkdirp": "^1.0.4",
-    "nodemon": "^2.0.6"
-  },
-  "devDependencies": {
-    "eslint": "^7.16.0"
-  }
+  "homepage": "https://github.com/Web-Development-CMT322/Daily_Services_Web_Application#readme"
 }
