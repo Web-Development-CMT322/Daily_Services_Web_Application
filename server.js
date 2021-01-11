@@ -1,8 +1,4 @@
 //jshint esversion:6
-if(process.env.NODE_ENV !== 'production'){
-  require('dotenv').load()
-}
-
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
@@ -18,8 +14,6 @@ const passport = require('passport')
 const flash = require('express-flash')
 const session = require('express-session')
 const methodOverride = require('method-override')
-
-const port = 8000;
 
 var router = express.Router();
 
@@ -45,14 +39,6 @@ app.use(passport.session())
 app.use(methodOverride('_method'))
 
 app.use(express.static("public"));
-
-const mongoose = require('mongoose')
-mongoose.connect(process.env.DATABASE_URL,{
-  userNewUrlParser: true
-})
-const db = mongoose.connection
-db.on('error', error => console.error(error))
-db.once('error', () => console.log('Connected to Mongoose'))
 
 app.get("/Service_Provider_Profile", function(req, res){
   res.render('Service_Provider_Profile.ejs')
@@ -112,11 +98,11 @@ app.delete('/logout', (req, res) => {
   res.redirect('/login')
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}!`)
-});
-
 // Personal Service Part
 app.get('/personal', (req, res) => {
   res.render('Personal_Services.ejs')
 })
+
+app.listen(process.env.PORT || 3000, function() {
+  console.log("Example app listening on port 8000!")
+});
