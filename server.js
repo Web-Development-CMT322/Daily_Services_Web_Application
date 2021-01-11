@@ -1,4 +1,8 @@
 //jshint esversion:6
+if(process.env.NODE_ENV !== 'production'){
+  require('dotenv').load()
+}
+
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
@@ -41,6 +45,14 @@ app.use(passport.session())
 app.use(methodOverride('_method'))
 
 app.use(express.static("public"));
+
+const mongoose = require('mongoose')
+mongoose.connect(process.env.DATABASE_URL,{
+  userNewUrlParser: true
+})
+const db = mongoose.connection
+db.on('error', error => console.error(error))
+db.once('error', () => console.log('Connected to Mongoose'))
 
 app.get("/Service_Provider_Profile", function(req, res){
   res.render('Service_Provider_Profile.ejs')
